@@ -1,0 +1,202 @@
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# WhatsApp sessions
+sessions/
+*.session
+
+# Conversation data
+conversations/
+
+# Logs
+logs/
+*.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+
+# nyc test coverage
+.nyc_output
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# dotenv environment variables file
+.env
+
+# parcel-bundler cache (https://parceljs.org/)
+.cache
+.parcel-cache
+
+# next.js build output
+.next
+
+# nuxt.js build output
+.nuxt
+
+# vuepress build output
+.vuepress/dist
+
+# Serverless directories
+.serverless
+
+# FuseBox cache
+.fusebox/
+
+# DynamoDB Local files
+.dynamodb/
+
+# TernJS port file
+.tern-port
+
+# Stores VSCode versions used for testing VSCode extensions
+.vscode-test
+
+# Temporary files
+temp/
+tmp/
+*.tmp
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Build outputs
+dist/
+build/
+
+# WhatsApp Web cache
+.wwebjs_cache/
+
+# Personal data and sensitive files
+*.session
+*.session-*
+.wwebjs_auth/
+
+# API keys and secrets
+.env.local
+.env.production
+.env.staging
+secrets.json
+config.json
+
+# Backup files
+*.backup
+*.bak
+*.old
+
+# IDE and editor files
+.vscode/
+.idea/
+*.sublime-*
+.atom/
+.cursor/
+.cursorignore
+.cursorrules
+
+# OS specific files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# Node.js specific
+.npm
+.node_repl_history
+*.tgz
+.yarn-integrity
+
+# Testing
+coverage/
+.nyc_output
+test-results/
+playwright-report/
+
+# Documentation build
+docs/_build/
+site/
+
+# Development and project-specific files
+.cursor/
+.cursorignore
+.cursorrules
+.wwebjs_auth/
+.wwebjs_cache/
+
+# Project rules and configurations
+rules/
+.project-rules
+development-rules.md
+
+# Local development files
+local-config.json
+dev-settings.json
+personal-notes.md
+todo.md
+notes.md
+
+# Editor and IDE specific
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.vimrc
+.emacs.d/
+
+# Temporary development files
+scratch/
+experiments/
+test-files/
+debug-*
+temp-*
+

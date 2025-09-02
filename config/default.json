@@ -1,0 +1,41 @@
+{
+  "bot": {
+    "personality": "custom",
+    "responseDelay": 0,
+    "maxResponseLength": 100,
+    "autoResponsesEnabled": true
+  },
+  "whatsapp": {
+    "sessionTimeout": 300000,
+    "qrCodeDisplay": true,
+    "sessionPath": "./sessions"
+  },
+  "logging": {
+    "level": "info",
+    "fileMaxSize": "10m",
+    "fileMaxFiles": 5,
+    "logPath": "./logs"
+  },
+  "commands": {
+    "prefix": "/",
+    "enabled": true,
+    "availableCommands": [
+      "help",
+      "status", 
+      "stop",
+      "start",
+      "info",
+      "personalities"
+    ]
+  },
+  "filtering": {
+    "ignoreGroups": true,
+    "responseFrequencyLimit": 10,
+    "ignoredContacts": []
+  },
+  "memory": {
+    "maxContextMessages": 10,
+    "summarizationThreshold": 20,
+    "conversationPath": "./conversations"
+  }
+}
