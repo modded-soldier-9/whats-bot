@@ -24,7 +24,7 @@ export default [
     },
     rules: {
       'no-console': 'off', // Allow console statements in this project
-      'no-unused-vars': 'warn',
+      'no-unused-vars': ['warn', { 'argsIgnorePattern': '^_' }],
       'prefer-const': 'error',
       'no-var': 'error',
     },

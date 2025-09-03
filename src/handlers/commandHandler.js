@@ -77,7 +77,7 @@ class CommandHandler {
    * @param {Array} args - Command arguments
    * @returns {string} Help response
    */
-  async handleHelp(message, args) {
+  async handleHelp(_message, _args) {
     const helpText = `🤖 *WhatsApp AI Bot Commands*
 
 ${this.prefix}help - Show this help message
@@ -101,7 +101,7 @@ Just send any message and I'll respond with AI! Use commands to control my behav
    * @param {Array} args - Command arguments
    * @returns {string} Status response
    */
-  async handleStatus(message, args) {
+  async handleStatus(message, _args) {
     const userSettings = this.getUserSettings(message.from);
     const status = userSettings.responsesEnabled ? '✅ Enabled' : '❌ Disabled';
     const personality =
@@ -129,7 +129,7 @@ I'm ready to chat! Send me any message and I'll respond with AI.`;
    * @param {Array} args - Command arguments
    * @returns {string} Stop response
    */
-  async handleStop(message, args) {
+  async handleStop(message, _args) {
     this.setUserSettings(message.from, { responsesEnabled: false });
 
     logger.info('User disabled responses', { from: message.from });
@@ -147,7 +147,7 @@ You can still use commands like ${this.prefix}help and ${this.prefix}status.`;
    * @param {Array} args - Command arguments
    * @returns {string} Start response
    */
-  async handleStart(message, args) {
+  async handleStart(message, _args) {
     this.setUserSettings(message.from, { responsesEnabled: true });
 
     logger.info('User enabled responses', { from: message.from });
@@ -173,7 +173,7 @@ Send me any message and I'll respond naturally. Use ${this.prefix}help for more 
    * @param {Array} args - Command arguments
    * @returns {string} Info response
    */
-  async handleInfo(message, args) {
+  async handleInfo(message, _args) {
     const userSettings = this.getUserSettings(message.from);
     const personality =
       config.get('bot.personality') === 'custom'
@@ -208,7 +208,7 @@ Send me any message and I'll respond naturally. Use ${this.prefix}help for more 
    * @param {Array} args - Command arguments
    * @returns {string} Personalities response
    */
-  async handlePersonalities(message, args) {
+  async handlePersonalities(_message, _args) {
     if (!this.personalityLoader) {
       return '❌ Personality system not available.';
     }

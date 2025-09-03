@@ -2,7 +2,6 @@ const config = require('./utils/config');
 const logger = require('./utils/logger');
 const WhatsAppClient = require('./core/whatsapp');
 const MessageHandler = require('./handlers/messageHandler');
-const Helpers = require('./utils/helpers');
 
 /**
  * WhatsApp AI Bot Main Application
