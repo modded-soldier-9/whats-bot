@@ -30,7 +30,7 @@ jobs:
       run: npm run lint
 
     - name: Check code formatting
-      run: npm run lint:fix -- --dry-run
+      run: npm run format:check
 
   security:
     runs-on: ubuntu-latest
